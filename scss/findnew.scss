@@ -1,0 +1,194 @@
+// common
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.inner {
+  position: relative;
+  width: 100%;
+  height: 100%
+}
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn {
+  width: 180px;
+  height: 50px;
+  background-color: yellow;
+  border: 3px solid #000;
+  border-radius: 30px;
+  font-size: 20px; 
+  cursor: pointer;
+  transition: .2s linear;
+
+  &:hover {
+    background: #fff;
+    color: #333;
+    transform: scale(1.05);
+  }
+}
+
+.board {
+  margin-top: 50px;
+  width: 100%;
+  height: 900px;
+  padding: 15px 150px;
+
+  .boardName {
+    width: 440px;
+    height: 40px;
+    font-size: 25px;
+    .bar {
+      width: 100%;
+      height: 3px;
+      background: yellow;
+      border-radius: 1.5px;
+    }
+  }
+
+  .searchBox {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 230px;
+    height: 40px;
+    padding: 5px;
+    border: 1px solid #000;
+    border-radius: 30px;
+    overflow: hidden;
+    flex-wrap: wrap;
+
+    input {
+      height: 100%;
+      width: 160px;
+      border: none;
+      outline: none;
+      font-size: 18px;
+    }
+
+    .searchIcon {
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+    }
+  }//searchBox
+
+  .attention {
+    margin-top: 30px;
+    width: 100%;
+    height: 300px;
+    border: 1px solid #000;
+    border-radius: 20px;
+    padding: 30px;
+
+    .inner {
+      .name {
+        justify-content: flex-start;
+        .logoImg {
+          width: 55px;
+          height: 40px;
+          margin-right: 10px;
+        }
+        .text {
+          font-size: 28px;
+          font-weight: bold;
+        }
+      }
+
+      .description {
+        margin-top: 10px;
+        width: 100%;
+        padding: 10px;
+        font-size: 20px;
+        line-height: 30px;
+      }
+    }
+  }// attention
+
+  .selectArea {
+    margin-top: 30px;
+    width: 100%;
+    height: 50px;
+    justify-content: flex-start;
+
+    select {
+      height: 80%;
+      outline: none;
+      font-size: 18px;
+      padding: 5px 10px;
+      margin-right: 20px;
+      border-radius: 20px;
+    }
+
+    .searchIcon {
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+    }
+  }
+
+  .boardList {
+    width: 100%;
+    height: 800px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+
+    .card {
+      position: relative;
+      width: 250px;
+      height: 250px;
+      border-radius: 20px;
+      overflow: hidden;
+      cursor: pointer;
+      &:hover {
+
+        .name {
+          opacity: 1;
+        }
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        transition: .3s linear;
+        &:hover {
+          transform: scale(1.05);
+        }
+      }
+
+      .name {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 30%;
+        opacity: 0;
+        transition: .3s linear;
+        background: linear-gradient(0deg, rgba(255,255,255,.5) 30%, rgba(255,255,255,0) 100%);
+        font-size: 20px;
+        font-weight: bold;
+      }
+    }
+  }// boardList
+
+  .pagination {
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    span {
+      display: inline-block;
+      margin: 0 50px;
+      font-weight: bold;
+      &:nth-of-type(2) {
+        margin: 0;
+        margin-right: 9px;
+      }
+    }
+  }
+}// board

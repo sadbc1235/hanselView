@@ -1,0 +1,23 @@
+{
+  "name": "hansel2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass-find": "sass --watch scss/dogfind.scss css/dogfind.css",
+    "sass-new": "sass --watch scss/findnew.scss css/findnew.css",
+    "sass-review": "sass --watch scss/review.scss css/review.css",
+    "sass-email": "sass --watch scss/email.scss css/email.css",
+    "sass-header": "sass --watch scss/header.scss css/header.css",
+    "sass": "sass --watch scss/main.scss css/main.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.54.4"
+  },
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}

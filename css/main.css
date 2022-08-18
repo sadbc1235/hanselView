@@ -1,0 +1,317 @@
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  width: 180px;
+  height: 50px;
+  background-color: yellow;
+  border: 3px solid #000;
+  border-radius: 30px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.2s linear;
+}
+.btn:hover {
+  background: #fff;
+  color: #333;
+  transform: scale(1.05);
+}
+
+.mainSlide {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1440px;
+  height: 600px;
+  border-radius: 0px 0px 20px 20px;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.mainSlide li {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 0.5s linear;
+}
+.mainSlide li.on {
+  opacity: 1;
+}
+.mainSlide li.right {
+  transform: translateX(100%);
+}
+.mainSlide li.left {
+  transform: translateX(-100%);
+}
+
+.main {
+  position: relative;
+  width: 100%;
+  height: 520px;
+  padding: 15px 150px;
+}
+.main .inner .mainText {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 99;
+}
+.main .inner .mainText h1 {
+  color: #fff;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.397);
+  cursor: default;
+}
+.main .inner .mainText .btn {
+  margin-top: 30px;
+}
+.main .inner .mainText .btn:hover {
+  background: #fff;
+  color: #333;
+  transform: scale(1.05);
+}
+.main .toRight, .main .toLeft {
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  transition: 0.2s linear;
+}
+.main .toRight:hover, .main .toLeft:hover {
+  transform: scale(1.1);
+}
+.main .toLeft {
+  left: 80px;
+}
+.main .toRight {
+  right: 80px;
+}
+
+.searchCode {
+  margin-top: 50px;
+  width: 100%;
+  height: 350px;
+  flex-direction: column;
+}
+.searchCode h1 {
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+.searchCode .searchBox {
+  width: 440px;
+  height: 80px;
+  padding: 10px;
+  border: 1px solid #000;
+  border-radius: 30px;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+.searchCode .searchBox input {
+  height: 100%;
+  width: 360px;
+  border: none;
+  outline: none;
+  font-size: 40px;
+}
+.searchCode .searchBox .searchIcon {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.simpleIntro {
+  margin-top: 50px;
+  width: 100%;
+  height: 400px;
+  background-image: url("../images/introbg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.simpleIntro .simpleContent {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  flex-direction: column;
+  background: radial-gradient(circle, rgba(41, 41, 41, 0.5) 30%, rgba(101, 101, 101, 0.8) 40%, rgba(75, 75, 75, 0) 100%);
+}
+.simpleIntro .simpleContent .logoImg {
+  width: 160px;
+}
+.simpleIntro .simpleContent .logoImg img {
+  object-fit: contain;
+}
+.simpleIntro .simpleContent .intro {
+  color: #fff;
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.content {
+  margin-top: 50px;
+  width: 100%;
+  height: 500px;
+}
+.content .box {
+  position: relative;
+  width: 50%;
+  transition: 0.3s linear;
+  height: 100%;
+  overflow: hidden;
+}
+.content .box:hover {
+  width: 55%;
+}
+.content .box:hover img {
+  filter: saturate(1.5);
+}
+.content .box:nth-child(1) {
+  border-radius: 20px 0 0 20px;
+}
+.content .box:nth-child(2) {
+  border-radius: 0px 20px 20px 0px;
+}
+.content .box h2 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.content .box img {
+  filter: saturate(0.8);
+  transition: 0.3s linear;
+}
+.content .box .btn {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
+.content .box .btn:hover {
+  background: #fff;
+  color: #333;
+  transform: scale(1.05) translateX(-50%);
+}
+
+.mainTip {
+  margin-top: 50px;
+  width: 100%;
+  height: 600px;
+  border: 1px solid #000;
+}
+
+.review {
+  position: relative;
+  margin-top: 50px;
+  width: 100%;
+  height: 500px;
+  padding: 15px 0px 15px 150px;
+  border-radius: 20px;
+  background-image: url("../images/reviewbg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.review .inner {
+  overflow: hidden;
+}
+.review .inner h1 {
+  font-size: 30px;
+  height: 35px;
+}
+.review .inner .view {
+  position: absolute;
+  left: 0;
+  width: 2000px;
+  height: calc(100% - 35px);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  transition: 0.5s linear;
+}
+.review .inner .view.active {
+  left: -999px;
+}
+.review .inner .view .card {
+  width: 333px;
+  height: 100%;
+  padding: 30px;
+  transition: 0.2s linear;
+}
+.review .inner .view .card .inner {
+  border-radius: 20px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.689);
+}
+.review .inner .view .card .inner .reviewImg {
+  width: 100%;
+  height: 60%;
+  border-radius: 20px 20px 0 0;
+  overflow: hidden;
+}
+.review .inner .view .card .inner .reviewText {
+  width: 100%;
+  height: 40%;
+  background: #fff;
+  border-radius: 0 0 20px 20px;
+}
+.review .inner .toRight {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  transition: 0.2s linear;
+  opacity: 0;
+}
+.review .inner .toRight.showBtn {
+  opacity: 1;
+}
+.review .inner .toRight:hover {
+  transform: scale(1.1) translateY(-50%);
+}
+.review .toLeft {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  transition: 0.2s linear;
+  opacity: 0;
+}
+.review .toLeft.showBtn {
+  opacity: 1;
+}
+.review .toLeft:hover {
+  transform: scale(1.1) translateY(-50%);
+}
+
+.kakaoMap {
+  margin-top: 50px;
+  width: 100%;
+  height: 600px;
+  padding: 15px 150px;
+}
+
+/*# sourceMappingURL=main.css.map */

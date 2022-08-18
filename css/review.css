@@ -1,0 +1,134 @@
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  width: 180px;
+  height: 50px;
+  background-color: yellow;
+  border: 3px solid #000;
+  border-radius: 30px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.2s linear;
+}
+.btn:hover {
+  background: #fff;
+  color: #333;
+  transform: scale(1.05);
+}
+
+.board {
+  margin-top: 50px;
+  width: 100%;
+  height: 900px;
+  padding: 15px 150px;
+}
+.board .boardName {
+  width: 265px;
+  height: 40px;
+  font-size: 25px;
+}
+.board .boardName .bar {
+  width: 100%;
+  height: 3px;
+  background: yellow;
+  border-radius: 1.5px;
+}
+.board .searchBox {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 230px;
+  height: 40px;
+  padding: 5px;
+  border: 1px solid #000;
+  border-radius: 30px;
+  overflow: hidden;
+  flex-wrap: wrap;
+}
+.board .searchBox input {
+  height: 100%;
+  width: 160px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+}
+.board .searchBox .searchIcon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.board .boardList {
+  width: 100%;
+  height: 750px;
+  margin-top: 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.board .boardList .card {
+  width: 500px;
+  height: 150px;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid #000;
+  margin-right: 70px;
+  margin-bottom: 30px;
+}
+.board .boardList .card img {
+  width: 30%;
+  height: 100%;
+}
+.board .boardList .card .cardText {
+  padding: 5px;
+  font-size: 13px;
+}
+.board .boardList .card .cardText div {
+  margin-bottom: 5px;
+  cursor: default;
+}
+.board .boardList .card .cardText div:nth-of-type(4) {
+  margin-bottom: 0;
+  line-height: 18px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.board .boardList .card .cardText div span {
+  font-size: 11px;
+  font-weight: bold;
+}
+.board .pagination {
+  width: 100%;
+  height: 50px;
+  font-size: 18px;
+}
+.board .pagination span {
+  display: inline-block;
+  margin: 0 50px;
+  font-weight: bold;
+}
+.board .pagination span:nth-of-type(2) {
+  margin: 0;
+  margin-right: 9px;
+}
+
+/*# sourceMappingURL=review.css.map */
