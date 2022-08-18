@@ -38,7 +38,7 @@ footer {
   height: 100px;
   font-size: 16px;
   background-color: #F2EFE9;
-  box-shadow: 0px -1px 10px #42594A;
+  box-shadow: 0px -1px 5px rgba(66, 89, 74, 0.5294117647);
 }
 
 /*# sourceMappingURL=common.css.map */
