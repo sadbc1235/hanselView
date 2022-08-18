@@ -9,6 +9,7 @@
     "sass-review": "sass --watch scss/review.scss css/review.css",
     "sass-email": "sass --watch scss/email.scss css/email.css",
     "sass-header": "sass --watch scss/header.scss css/header.css",
+    "sass-common": "sass --watch scss/common.scss css/common.css",
     "sass": "sass --watch scss/main.scss css/main.css"
   },
   "keywords": [],

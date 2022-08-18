@@ -4,7 +4,8 @@ header {
   height: 80px;
   padding: 15px 150px;
   z-index: 99;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 30%, rgba(255, 255, 255, 0) 100%);
+  background-color: rgb(242, 239, 233);
+  background: linear-gradient(180deg, rgba(242, 239, 233, 0.9) 30%, rgba(255, 255, 255, 0) 100%);
 }
 header .inner {
   display: flex;
@@ -19,32 +20,33 @@ header .inner .logo .logoText {
   font-size: 25px;
   font-weight: bold;
   margin-right: 10px;
+  text-shadow: 2px 2px 5px rgba(174, 242, 217, 0.5058823529);
 }
 header .inner .logo .logoImg {
   cursor: pointer;
-  width: 73px;
-  height: 56px;
+  width: 60px;
+  height: 46px;
 }
 header .inner .menu li {
   margin-right: 20px;
   font-size: 20px;
   cursor: pointer;
-  text-shadow: 1px 1px 5px #fff;
+  text-shadow: 1px 1px 5px #D9D3CC;
   transition: 0.2s linear;
-}
-header .inner .menu li:hover {
   font-weight: bold;
 }
 header .inner .menu li:hover .bar {
   width: 100%;
+  box-shadow: inset 0px 0px 1px #42594A;
 }
 header .inner .menu li:nth-of-type(6) {
   margin-right: 0;
 }
 header .inner .menu li .bar {
+  margin-top: 2px;
   width: 0px;
   height: 3px;
-  background: rgba(255, 255, 0, 0.878);
+  background: #AEF2D9;
   border-radius: 1.5px;
   transition: 0.2s linear;
 }

@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="/css/reset.css">
   <link rel="stylesheet" href="/css/main.css">
   <link rel="stylesheet" href="/css/header.css">
+  <link rel="stylesheet" href="/css/common.css">
   <!-- kakaomap -->
   <link rel="stylesheet" href="/css/kakaomap.css">
 
@@ -18,17 +19,27 @@
   <header>
     <div class="inner">
       <div class="logo center">
-        <a href="/index.html">
+        <a href="/index.html" class="center">
           <div class="logoText">
             헨젤 & 빵조각
           </div>
+          <div class="logoImg">
+            <img src="/images/logo/dogcat.png" alt="logo">
+          </div>
         </a>
-        <div class="logoImg">
-          <img src="/images/logo/dogcat.png" alt="logo">
-        </div>
       </div>
   
       <ul class="menu center">
+        <li>
+          <a href="/pages/dogfind.html">
+            보호중인 동물
+            <div class="bar"></div>
+          </a>
+        </li>
+        <li>
+          찾고있는 동물
+          <div class="bar"></div>
+        </li>
         <li>
           <a href="/pages/findnew.html">
             입양공고
@@ -36,18 +47,8 @@
           </a>
         </li>
         <li>
-          <a href="/pages/dogfind.html">
-            빵조각 보러가기
-            <div class="bar"></div>
-          </a>
-        </li>
-        <li>
-          헨젤네 일상
-          <div class="bar"></div>
-        </li>
-        <li>
           <a href="/pages/review.html">
-            후기게시판
+            입양후기
             <div class="bar"></div>
           </a>
         </li>
@@ -58,7 +59,7 @@
           </a>
         </li>
         <li>
-          온라인 입소신청
+          Q&A
           <div class="bar"></div>
         </li>
       </ul>
@@ -72,32 +73,32 @@
     
     <div class="inner">
       <div class="mainText">
-        <h1>여기로 오라</h1>
-        <h1>길을 잃은 자 들이여</h1>
+        <h1>주인님의 냄새가 나요!</h1>
+        <h1>절 찾으러 오셨나봐요!</h1>
         <div class="btn center">
-          헨젤이네 물어보기
+          헨젤 & 빵조각 이란?
         </div>
       </div>
     </div>
 
     <div class="toLeft">
       <svg width="86" height="86" viewBox="0 0 86 86" fill="none">
-        <rect x="43" y="85.4264" width="60" height="4" rx="2" transform="rotate(-135 43 85.4264)" fill="black"/>
-        <rect x="45.8284" y="3.40203" width="60" height="4" rx="2" transform="rotate(135 45.8284 3.40203)" fill="black"/>
+        <rect x="43" y="85.4264" width="60" height="4" rx="2" transform="rotate(-135 43 85.4264)" fill="#AEF2D9" stroke="#42594A"/>
+        <rect x="45.8284" y="3.40203" width="60" height="4" rx="2" transform="rotate(135 45.8284 3.40203)" fill="#AEF2D9" stroke="#42594A"/>
       </svg>
     </div>
     <div class="toRight">
       <svg width="86" height="86" viewBox="0 0 86 86" fill="none">
-        <rect x="43" y="0.573608" width="60" height="4" rx="2" transform="rotate(45 43 0.573608)" fill="black"/>
-        <rect x="40.1716" y="82.598" width="60" height="4" rx="2" transform="rotate(-45 40.1716 82.598)" fill="black"/>
+        <rect x="43" y="0.573608" width="60" height="4" rx="2" transform="rotate(45 43 0.573608)" fill="#AEF2D9" stroke="#42594A"/>
+        <rect x="40.1716" y="82.598" width="60" height="4" rx="2" transform="rotate(-45 40.1716 82.598)" fill="#AEF2D9" stroke="#42594A"/>
       </svg>
     </div>
   </div>
 
   <section class="searchCode center">
-    <h1>유기동물의 코드를 빨르게 조회 해보세요!</h1>
+    <h1>반려동물의 등록번호를 알고 계신가요?</h1>
     <article class="searchBox center">
-      <input type="text">
+      <input type="text" class="searchInput">
       <div class="searchIcon">
         <svg viewBox="0 0 512 512">
           <path d="M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7C401.8 87.79 326.8 13.32 235.2 1.723C99.01-15.51-15.51 99.01 1.724 235.2c11.6 91.64 86.08 166.7 177.6 178.9c53.8 7.189 104.3-6.236 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 0C515.9 484.7 515.9 459.3 500.3 443.7zM79.1 208c0-70.58 57.42-128 128-128s128 57.42 128 128c0 70.58-57.42 128-128 128S79.1 278.6 79.1 208z"/>
@@ -112,7 +113,11 @@
         <img src="/images/logo/dogcatwhite.png" alt="logo">
       </div>
       <div class="intro">
-        대충 뭔가를 설명하는 내용임 ㅇㅇ.
+        헨젤과 그레텔은 집으로 돌아가기 위해 빵조각을 던졌어요. <br>
+        그 빵조각은 단순한 빵조각이 아닌 돌아가기 위한 희망이였을거에요. <br>
+        <br>
+        헨젤네 & 빵조각 에서도 헨젤과 그레텔이 그랬던것처럼 <br>
+        실종동물과 그 가족들의 희망이 되어 드릴게요.
       </div>
     </div>
   </div>
@@ -145,8 +150,8 @@
   </section>
 
   <section class="review center">
-    <div class="inner">
-      <h1>후기를 표현하는 글귀나 제목</h1>
+    <div class="inner center">
+      <h1>소중한 후기 카드들 이에요.</h1>
       <div class="view">
 
         <div class="card">
@@ -185,7 +190,7 @@
           </div>
         </div>
 
-        <div class="card">
+        <div class="card center">
           <div class="inner">
             <div class="reviewImg">
               <img src="/images/dog/profile5.jpg" alt="">
@@ -202,16 +207,16 @@
 
       <div class="toRight showBtn" id="revBtnR">
         <svg width="86" height="86" viewBox="0 0 86 86" fill="none">
-          <rect x="43" y="0.573608" width="60" height="4" rx="2" transform="rotate(45 43 0.573608)" fill="black"/>
-          <rect x="40.1716" y="82.598" width="60" height="4" rx="2" transform="rotate(-45 40.1716 82.598)" fill="black"/>
+          <rect x="43" y="0.573608" width="60" height="4" rx="2" transform="rotate(45 43 0.573608)" fill="#AEF2D9" stroke="#42594A"/>
+          <rect x="40.1716" y="82.598" width="60" height="4" rx="2" transform="rotate(-45 40.1716 82.598)" fill="#AEF2D9" stroke="#42594A"/>
         </svg>
       </div>
     </div>
 
     <div class="toLeft" id="revBtnL">
       <svg width="86" height="86" viewBox="0 0 86 86" fill="none">
-        <rect x="43" y="85.4264" width="60" height="4" rx="2" transform="rotate(-135 43 85.4264)" fill="black"/>
-        <rect x="45.8284" y="3.40203" width="60" height="4" rx="2" transform="rotate(135 45.8284 3.40203)" fill="black"/>
+        <rect x="43" y="85.4264" width="60" height="4" rx="2" transform="rotate(-135 43 85.4264)" fill="#AEF2D9" stroke="#42594A"/>
+        <rect x="45.8284" y="3.40203" width="60" height="4" rx="2" transform="rotate(135 45.8284 3.40203)" fill="#AEF2D9" stroke="#42594A"/>
       </svg>
     </div>
   </section>

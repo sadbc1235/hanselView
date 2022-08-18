@@ -135,3 +135,16 @@ const revBtnL = review.querySelector("#revBtnL");
       },300)
     }, 100)
   });
+
+  const searchInput = document.querySelector(".searchInput");
+  const searchBox = document.querySelector(".searchBox");
+  const searchIcon = document.querySelector(".searchIcon");
+  
+  searchInput.addEventListener("focus", () => {
+    searchBox.classList.add("onFocus");
+    searchIcon.classList.add("onFocus");
+  })
+  searchInput.addEventListener("focusout", () => {
+    searchBox.classList.remove("onFocus");
+    searchIcon.classList.remove("onFocus");
+  })

@@ -9,23 +9,33 @@
   <link rel="stylesheet" href="/css/reset.css">
   <link rel="stylesheet" href="/css/review.css">
   <link rel="stylesheet" href="/css/header.css">
+  <link rel="stylesheet" href="/css/common.css">
 </head>
 <body>
   <header>
     <div class="inner">
       <div class="logo center">
-        <a href="/index.html">
+        <a href="/index.html" class="center">
           <div class="logoText">
             헨젤 & 빵조각
           </div>
+          <div class="logoImg">
+            <img src="/images/logo/dogcat.png" alt="logo">
+          </div>
         </a>
-
-        <div class="logoImg">
-          <img src="/images/logo/dogcat.png" alt="logo">
-        </div>
       </div>
   
       <ul class="menu center">
+        <li>
+          <a href="/pages/dogfind.html">
+            보호중인 동물
+            <div class="bar"></div>
+          </a>
+        </li>
+        <li>
+          찾고있는 동물
+          <div class="bar"></div>
+        </li>
         <li>
           <a href="/pages/findnew.html">
             입양공고
@@ -33,18 +43,8 @@
           </a>
         </li>
         <li>
-          <a href="/pages/dogfind.html">
-            빵조각 보러가기
-            <div class="bar"></div>
-          </a>
-        </li>
-        <li>
-          헨젤네 일상
-          <div class="bar"></div>
-        </li>
-        <li>
           <a href="/pages/review.html">
-            후기게시판
+            입양후기
             <div class="bar"></div>
           </a>
         </li>
@@ -55,7 +55,7 @@
           </a>
         </li>
         <li>
-          온라인 입소신청
+          Q&A
           <div class="bar"></div>
         </li>
       </ul>
@@ -69,7 +69,7 @@
         <div class="bar"></div>
       </div>
       <div class="searchBox center">
-        <input type="text">
+        <input type="text" class="searchInput">
         <div class="searchIcon">
           <svg viewBox="0 0 512 512">
             <path d="M500.3 443.7l-119.7-119.7c27.22-40.41 40.65-90.9 33.46-144.7C401.8 87.79 326.8 13.32 235.2 1.723C99.01-15.51-15.51 99.01 1.724 235.2c11.6 91.64 86.08 166.7 177.6 178.9c53.8 7.189 104.3-6.236 144.7-33.46l119.7 119.7c15.62 15.62 40.95 15.62 56.57 0C515.9 484.7 515.9 459.3 500.3 443.7zM79.1 208c0-70.58 57.42-128 128-128s128 57.42 128 128c0 70.58-57.42 128-128 128S79.1 278.6 79.1 208z"/>
@@ -77,61 +77,83 @@
         </div>
       </div>
 
+      <div class="write btn center">
+        글쓰기
+      </div>
+
       <div class="boardList">
         <div class="card center">
           <img src="/images/dog/profile1.jpg" alt="find">
           <div class="cardText">
-            <div><span>제목</span> : 부러스 부러스 찾아 부러스</div>
-            <div><span>닉네임 : </span>웃음이 주인</div>
-            <div><span>반려동물 이름 : </span>웃음이</div>
-            <div><span>후기</span> : 혹여나 못찾으면 어쩔까 하고 불안해 하고 있어는데 마침 ㅇㅇㅇ님이 보호중이라고 올려주셔서 찾을 수 있었습니다. 감사합니다.</div>
+            <div><span class="name">제목</span> : 부러스 부러스 찾아 부러스</div>
+            <div class="box center">
+              <div><span class="name">닉네임 : </span>웃음이 주인</div>
+              <div><span class="name">반려동물 이름 : </span>웃음이</div>
+            </div>
+            <div>혹여나 못찾으면 어쩔까 하고 불안해 하고 있어는데 마침 ㅇㅇㅇ님이 보호중이라고 올려주셔서 찾을 수 있었습니다. 감사합니다.</div>
           </div>
         </div>
+
         <div class="card center">
           <img src="/images/dog/profile2.jpg" alt="find">
           <div class="cardText">
-            <div><span>제목</span> : 홀리 몰리!! 애기가 너무 이뻐여!!</div>
-            <div><span>닉네임 : </span>귀여운덕후</div>
-            <div><span>반려동물 이름 : </span>근육맨</div>
-            <div><span>후기</span> : 이쁜아이 잘 구조해서 기부니가 좋습니다ㅎㅎ 잘 키울게여!!</div>
+            <div><span class="name">제목</span> : 홀리 몰리!! 애기가 너무 이뻐여!!</div>
+            <div class="box center">
+              <div><span class="name">닉네임 : </span>귀여운덕후</div>
+              <div><span class="name">반려동물 이름 : </span>근육맨</div>
+            </div>
+            <div>이쁜아이 잘 구조해서 기부니가 좋습니다ㅎㅎ 잘 키울게여!!</div>
           </div>
         </div>
+
         <div class="card center">
           <img src="/images/dog/profile3.jpg" alt="find">
           <div class="cardText">
-            <div><span>제목</span> : 서울 날씨</div>
-            <div><span>닉네임 : </span>기상청</div>
-            <div><span>반려동물 이름 : </span>비</div>
-            <div><span>후기</span> : 안녕하세요. 오늘 서울의 날씨는 화창한 날이 되겠습니다!</div>
+            <div><span class="name">제목</span> : 서울 날씨</div>
+            <div class="box center">
+              <div><span class="name">닉네임 : </span>기상청</div>
+              <div><span class="name">반려동물 이름 : </span>비</div>
+            </div>
+            <div>안녕하세요. 오늘 서울의 날씨는 화창한 날이 되겠습니다!</div>
           </div>
         </div>
+
         <div class="card center">
           <img src="/images/dog/profile4.jpg" alt="find">
           <div class="cardText">
-            <div><span>제목</span> : goobye</div>
-            <div><span>닉네임 : </span>빡친효신</div>
-            <div><span>반려동물 이름 : </span>꿀보이스</div>
-            <div><span>후기</span> : 멀어져 가는 오후를 바라보다~ 스쳐 지나가버린 그때 생각이나</div>
+            <div><span class="name">제목</span> : goobye</div>
+            <div class="box center">
+              <div><span class="name">닉네임 : </span>빡친효신</div>
+              <div><span class="name">반려동물 이름 : </span>꿀보이스</div>
+            </div>
+            <div>멀어져 가는 오후를 바라보다~ 스쳐 지나가버린 그때 생각이나</div>
           </div>
         </div>
+
         <div class="card center">
           <img src="/images/dog/profile5.jpg" alt="find">
           <div class="cardText">
-            <div><span>제목</span> : 유기동물이 활발하고 잘노는 모습에 흐믓해서 충격</div>
-            <div><span>닉네임 : </span>전직 기자</div>
-            <div><span>반려동물 이름 : </span>리포터</div>
-            <div><span>후기</span> : 최근 유기동물을 입양하는 사람이 늘고 있는데요. 제가 한번 입양해보겠습니다.</div>
+            <div><span class="name">제목</span> : 유기동물이 활발하고 잘노는 모습에 흐믓해서 충격</div>
+            <div class="box center">
+              <div><span class="name">닉네임 : </span>전직 기자</div>
+              <div><span class="name">반려동물 이름 : </span>리포터</div>
+            </div>
+            <div>최근 유기동물을 입양하는 사람이 늘고 있는데요. 제가 한번 입양해보겠습니다.</div>
           </div>
         </div>
+
         <div class="card center">
           <img src="/images/dog/profile1.jpg" alt="find">
           <div class="cardText">
-            <div><span>제목</span> : 헤이 모두들 안녕? 내가 누군지 아니? 이! 하! 이 다!</div>
-            <div><span>닉네임 : </span>이하이팬클럽</div>
-            <div><span>반려동물 이름 : </span>rose</div>
-            <div><span>후기</span> : 이하이 만세</div>
+            <div><span class="name">제목</span> : 헤이 모두들 안녕? 내가 누군지 아니? 이! 하! 이 다!</div>
+            <div class="box center">
+              <div><span class="name">닉네임 : </span>이하이팬클럽</div>
+              <div><span class="name">반려동물 이름 : </span>rose</div>
+            </div>
+            <div>이하이 만세</div>
           </div>
         </div>
+        
 
         
 
@@ -140,5 +162,21 @@
       </div>
     </div>
   </section>
+
+  <script>
+
+    const searchInput = document.querySelector(".searchInput");
+      const searchBox = document.querySelector(".searchBox");
+      const searchIcon = document.querySelector(".searchIcon");
+      
+      searchInput.addEventListener("focus", () => {
+        searchBox.classList.add("onFocus");
+        searchIcon.classList.add("onFocus");
+      })
+      searchInput.addEventListener("focusout", () => {
+        searchBox.classList.remove("onFocus");
+        searchIcon.classList.remove("onFocus");
+      })
+      </script>
 </body>
 </html>

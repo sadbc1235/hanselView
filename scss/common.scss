@@ -1,0 +1,34 @@
+$eventColor: #AEF2D9;
+
+// common
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.inner {
+  position: relative;
+  width: 100%;
+  height: 100%
+}
+.center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn {
+  width: 180px;
+  height: 50px;
+  background-color: $eventColor;
+  box-shadow: inset 0px 0px 5px #42594A;
+  border-radius: 30px;
+  font-size: 20px; 
+  font-weight: bold;
+  cursor: pointer;
+  transition: .2s linear;
+
+  &:hover {
+    background: #fff;
+    transform: scale(1.05);
+  }
+}

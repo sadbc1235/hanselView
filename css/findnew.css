@@ -1,84 +1,3 @@
-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-
-.center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.btn {
-  width: 180px;
-  height: 50px;
-  background-color: yellow;
-  border: 3px solid #000;
-  border-radius: 30px;
-  font-size: 20px;
-  cursor: pointer;
-  transition: 0.2s linear;
-}
-.btn:hover {
-  background: #fff;
-  color: #333;
-  transform: scale(1.05);
-}
-
-header {
-  position: relative;
-  width: 100%;
-  height: 80px;
-  padding: 15px 150px;
-  z-index: 99;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 30%, rgba(255, 255, 255, 0) 100%);
-}
-header .inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-header .inner .logo .logoText {
-  font-size: 25px;
-  font-weight: bold;
-  margin-right: 10px;
-  cursor: default;
-}
-header .inner .logo .logoImg {
-  width: 73px;
-  height: 56px;
-}
-header .inner .menu li {
-  margin-right: 20px;
-  font-size: 20px;
-  cursor: pointer;
-  text-shadow: 1px 1px 5px #fff;
-  transition: 0.2s linear;
-}
-header .inner .menu li:hover {
-  font-weight: bold;
-}
-header .inner .menu li:hover .bar {
-  width: 100%;
-}
-header .inner .menu li:nth-of-type(6) {
-  margin-right: 0;
-}
-header .inner .menu li .bar {
-  width: 0px;
-  height: 3px;
-  background: rgba(255, 255, 0, 0.878);
-  border-radius: 1.5px;
-  transition: 0.2s linear;
-}
-
 .board {
   margin-top: 50px;
   width: 100%;
@@ -86,14 +5,16 @@ header .inner .menu li .bar {
   padding: 15px 150px;
 }
 .board .boardName {
-  width: 440px;
+  width: 400px;
   height: 40px;
   font-size: 25px;
+  font-weight: bold;
 }
 .board .boardName .bar {
+  margin-top: 2px;
   width: 100%;
   height: 3px;
-  background: yellow;
+  background: #AEF2D9;
   border-radius: 1.5px;
 }
 .board .searchBox {
@@ -103,36 +24,53 @@ header .inner .menu li .bar {
   width: 230px;
   height: 40px;
   padding: 5px;
-  border: 1px solid #000;
+  border: 1px solid #42594A;
   border-radius: 30px;
   overflow: hidden;
   flex-wrap: wrap;
+  box-shadow: inset 0px 0px 3px #42594A;
+  transition: 0.2s linear;
+}
+.board .searchBox.onFocus {
+  box-shadow: inset 0px 0px 3px #AEF2D9;
 }
 .board .searchBox input {
   height: 100%;
   width: 160px;
   border: none;
   outline: none;
-  font-size: 18px;
+  font-size: 16px;
 }
 .board .searchBox .searchIcon {
   width: 20px;
   height: 20px;
   cursor: pointer;
 }
+.board .searchBox .searchIcon.onFocus svg path {
+  fill: #AEF2D9;
+  stroke: #42594A;
+  stroke-width: 2;
+}
+.board .searchBox .searchIcon svg path {
+  fill: #42594A;
+  stroke: #42594A;
+  stroke-width: 2;
+  transition: 0.2s linear;
+}
 .board .attention {
   margin-top: 30px;
   width: 100%;
   height: 300px;
-  border: 1px solid #000;
   border-radius: 20px;
   padding: 30px;
+  background-color: #F2EFE9;
+  box-shadow: 1px 1px 5px #42594A;
 }
 .board .attention .inner .name {
   justify-content: flex-start;
 }
 .board .attention .inner .name .logoImg {
-  width: 55px;
+  width: 51.5px;
   height: 40px;
   margin-right: 10px;
 }
@@ -148,23 +86,55 @@ header .inner .menu li .bar {
   line-height: 30px;
 }
 .board .selectArea {
+  position: relative;
   margin-top: 30px;
   width: 100%;
   height: 50px;
   justify-content: flex-start;
 }
+.board .selectArea .box {
+  padding: 5px 10px;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: #F2EFE9;
+  box-shadow: 1px 1px 3px #42594A;
+}
 .board .selectArea select {
-  height: 80%;
+  height: 100%;
   outline: none;
   font-size: 18px;
   padding: 5px 10px;
   margin-right: 20px;
-  border-radius: 20px;
+  border: none;
+  font-weight: bold;
+  background-color: #F2EFE9;
+}
+.board .selectArea select option {
+  font-weight: bold;
+  margin: 5px;
+}
+.board .selectArea select option:checked {
+  font-weight: bold;
 }
 .board .selectArea .searchIcon {
   width: 20px;
   height: 20px;
   cursor: pointer;
+}
+.board .selectArea .searchIcon svg path {
+  fill: #42594A;
+  stroke: #42594A;
+  stroke-width: 2;
+  transition: 0.2s linear;
+}
+.board .selectArea .write {
+  position: absolute;
+  top: 0px;
+  right: 0;
+  height: 80%;
+  width: 80px;
+  font-size: 16px;
+  font-weight: bold;
 }
 .board .boardList {
   width: 100%;
@@ -181,6 +151,7 @@ header .inner .menu li .bar {
   border-radius: 20px;
   overflow: hidden;
   cursor: pointer;
+  box-shadow: 2px 2px 10px #42594A;
 }
 .board .boardList .card:hover .name {
   opacity: 1;
@@ -201,7 +172,7 @@ header .inner .menu li .bar {
   height: 30%;
   opacity: 0;
   transition: 0.3s linear;
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.5) 30%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.6) 50%, rgba(255, 255, 255, 0) 100%);
   font-size: 20px;
   font-weight: bold;
 }

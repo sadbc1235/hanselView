@@ -1,3 +1,5 @@
+$eventColor: #AEF2D9;
+
 // header
 header {
   position: relative;
@@ -5,7 +7,8 @@ header {
   height: 80px;
   padding: 15px 150px;
   z-index: 99;
-  background: linear-gradient(180deg, rgba(255,255,255,.5) 30%, rgba(255,255,255,0) 100%);
+  background-color: rgb(242, 239, 233);
+  background: linear-gradient(180deg, rgba(242, 239, 233, .9) 30%, rgba(255,255,255,0) 100%);
 
   .inner {
     display: flex;
@@ -19,12 +22,13 @@ header {
         font-size: 25px;
         font-weight: bold;
         margin-right: 10px;
+        text-shadow: 2px 2px 5px #aef2d981;
       }// text
 
       .logoImg {
         cursor: pointer;
-        width: 73px;
-        height: 56px;
+        width: 60px;
+        height: 46px;
       }
     }// logo
 
@@ -33,14 +37,13 @@ header {
         margin-right: 20px;
         font-size: 20px;
         cursor: pointer;
-        text-shadow: 1px 1px 5px #fff;
+        text-shadow: 1px 1px 5px #D9D3CC;
         transition: .2s linear;
-
+        font-weight: bold;
         &:hover{
-          font-weight: bold;
-
           .bar {
             width: 100%;
+            box-shadow: inset 0px 0px 1px #42594A;
           }
         }
 
@@ -49,9 +52,10 @@ header {
         }
 
         .bar {
+          margin-top: 2px;
           width: 0px;
           height: 3px;
-          background: rgba(255, 255, 0, 0.878);
+          background: $eventColor;
           border-radius: 1.5px;
           transition: .2s linear;
         }

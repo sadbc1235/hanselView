@@ -38,7 +38,6 @@ img {
   margin-top: 100px;
   width: 100%;
   height: 650px;
-  border: 1px solid #000;
   border-radius: 20px;
   padding: 15px 150px;
   overflow: hidden;
@@ -65,7 +64,7 @@ img {
     height: 100%;
     background-image: url("../images/video_cover_pattern.png");
     background-color: rgba(0,0,0,.3);
-
+    box-shadow: inset 0px 0px 20px #000000;
   }
   .subject {
     position: absolute;
@@ -86,32 +85,36 @@ img {
     div {
       width: 307px;
       height: 50px;
-      padding: 0 10px;
-      border-radius: 20px;;
+      border-radius: 20px;
       display: flex;
       align-items: center;
       margin-bottom: 20px;
       background: #fff;
       overflow: hidden;
+      box-shadow: 1px 1px 5px #27352c;
 
       &:nth-of-type(4) {
-        height: auto;
+        height: 220px;
       }
       &:nth-of-type(5) {
         justify-content: center; 
-        
+        padding: 0;
         input {
           width: 100%;
           border-left: none;
+          padding-left: 0;
           cursor: pointer;
         }
       }
 
       h3 {
-        width: 60px;
+        width: calc(307px - 250px);
+        height: 100%;
         font-size: 18px;
-        margin-right: 10px;
-        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #F2EFE9;
       }
       input {
         height: 100%;
@@ -119,9 +122,10 @@ img {
         padding-left: 10px;
         outline: none;
         border: none;
+        border-radius: 0px 20px 20px 0; 
         font-size: 18px;
         background: #fff;
-        border-left: 1px solid #000;
+        box-shadow: inset 0px -1px 3px #42594A;
       }
       textarea {
         padding: 10px;
@@ -129,7 +133,12 @@ img {
         outline: none;
         border: none;
         font-size: 17px;
-        border-left: 1px solid #000;
+        box-shadow: inset 0px -1px 3px #42594A;
+      }
+    }
+    .submit {
+      > input {
+        font-weight: bold;
       }
     }
   }

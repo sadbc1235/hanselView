@@ -32,64 +32,11 @@ img {
   transform: scale(1.05);
 }
 
-header {
-  position: relative;
-  width: 100%;
-  height: 80px;
-  padding: 15px 150px;
-  z-index: 99;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.5) 30%, rgba(255, 255, 255, 0) 100%);
-}
-header .inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-header .inner .logo {
-  cursor: pointer;
-}
-header .inner .logo .logoText {
-  cursor: pointer;
-  font-size: 25px;
-  font-weight: bold;
-  margin-right: 10px;
-  cursor: default;
-}
-header .inner .logo .logoImg {
-  cursor: pointer;
-  width: 73px;
-  height: 56px;
-}
-header .inner .menu li {
-  margin-right: 20px;
-  font-size: 20px;
-  cursor: pointer;
-  text-shadow: 1px 1px 5px #fff;
-  transition: 0.2s linear;
-}
-header .inner .menu li:hover {
-  font-weight: bold;
-}
-header .inner .menu li:hover .bar {
-  width: 100%;
-}
-header .inner .menu li:nth-of-type(6) {
-  margin-right: 0;
-}
-header .inner .menu li .bar {
-  width: 0px;
-  height: 3px;
-  background: rgba(255, 255, 0, 0.878);
-  border-radius: 1.5px;
-  transition: 0.2s linear;
-}
-
 .email {
   position: relative;
   margin-top: 100px;
   width: 100%;
   height: 650px;
-  border: 1px solid #000;
   border-radius: 20px;
   padding: 15px 150px;
   overflow: hidden;
@@ -114,6 +61,7 @@ header .inner .menu li .bar {
   height: 100%;
   background-image: url("../images/video_cover_pattern.png");
   background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0px 0px 20px #000000;
 }
 .email .subject {
   position: absolute;
@@ -133,30 +81,35 @@ header .inner .menu li .bar {
 .email form div {
   width: 307px;
   height: 50px;
-  padding: 0 10px;
   border-radius: 20px;
   display: flex;
   align-items: center;
   margin-bottom: 20px;
   background: #fff;
   overflow: hidden;
+  box-shadow: 1px 1px 5px #27352c;
 }
 .email form div:nth-of-type(4) {
-  height: auto;
+  height: 220px;
 }
 .email form div:nth-of-type(5) {
   justify-content: center;
+  padding: 0;
 }
 .email form div:nth-of-type(5) input {
   width: 100%;
   border-left: none;
+  padding-left: 0;
   cursor: pointer;
 }
 .email form div h3 {
-  width: 60px;
+  width: 57px;
+  height: 100%;
   font-size: 18px;
-  margin-right: 10px;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F2EFE9;
 }
 .email form div input {
   height: 100%;
@@ -164,9 +117,10 @@ header .inner .menu li .bar {
   padding-left: 10px;
   outline: none;
   border: none;
+  border-radius: 0px 20px 20px 0;
   font-size: 18px;
   background: #fff;
-  border-left: 1px solid #000;
+  box-shadow: inset 0px -1px 3px #42594A;
 }
 .email form div textarea {
   padding: 10px;
@@ -174,7 +128,10 @@ header .inner .menu li .bar {
   outline: none;
   border: none;
   font-size: 17px;
-  border-left: 1px solid #000;
+  box-shadow: inset 0px -1px 3px #42594A;
+}
+.email form .submit > input {
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=email.css.map */
