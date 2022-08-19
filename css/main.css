@@ -275,6 +275,41 @@
   height: 40%;
   background-color: #F2EFE9;
   border-radius: 0 0 20px 20px;
+  box-shadow: inset -1px 0px 4px #42594A;
+}
+.review .inner .view .card .inner .reviewText .cardText {
+  height: 100%;
+  padding: 15px 10px;
+  font-size: 13px;
+  text-shadow: 1px 1px 1px rgba(66, 89, 74, 0.231372549);
+}
+.review .inner .view .card .inner .reviewText .cardText .box {
+  justify-content: flex-start;
+}
+.review .inner .view .card .inner .reviewText .cardText .box div:nth-of-type(1) {
+  width: 50%;
+}
+.review .inner .view .card .inner .reviewText .cardText div {
+  margin-bottom: 5px;
+  cursor: default;
+  letter-spacing: 1px;
+}
+.review .inner .view .card .inner .reviewText .cardText div:nth-of-type(3) {
+  height: 95px;
+  padding: 10px;
+  border-radius: 20px;
+  margin-bottom: 0;
+  line-height: 19px;
+  box-shadow: inset 0px 0px 3px #42594A;
+  background-color: #fff;
+}
+.review .inner .view .card .inner .reviewText .cardText div:nth-of-type(3) .name {
+  margin-bottom: 0;
+}
+.review .inner .view .card .inner .reviewText .cardText div .name {
+  font-size: 11px;
+  font-weight: bold;
+  text-shadow: none;
 }
 .review .inner .toRight {
   position: absolute;
