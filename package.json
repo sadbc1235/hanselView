@@ -5,13 +5,17 @@
   "main": "index.js",
   "scripts": {
     "sass-find": "sass --watch scss/dogfind.scss css/dogfind.css",
+    "sass-findForm": "sass --watch scss/dogfindForm.scss css/dogfindForm.css",
     "sass-new": "sass --watch scss/findnew.scss css/findnew.css",
     "sass-newInfo": "sass --watch scss/findnewInfo.scss css/findnewInfo.css",
+    "sass-newForm": "sass --watch scss/findnewForm.scss css/findnewForm.css",
     "sass-review": "sass --watch scss/review.scss css/review.css",
     "sass-email": "sass --watch scss/email.scss css/email.css",
     "sass-header": "sass --watch scss/header.scss css/header.css",
     "sass-common": "sass --watch scss/common.scss css/common.css",
     "sass-findInfo": "sass --watch scss/dogfindInfo.scss css/dogfindInfo.css",
+    "sass-signIn": "sass --watch scss/signInForm.scss css/signInForm.css",
+    "sass-signUp": "sass --watch scss/signUpForm.scss css/signUpForm.css",
     "sass": "sass --watch scss/main.scss css/main.css"
   },
   "keywords": [],

@@ -1,0 +1,144 @@
+.boardInfo {
+  margin-top: 30px;
+  width: 100%;
+  // height: 600px;
+  padding: 15px 369px;
+
+  .inner {
+    align-items: flex-start;
+    flex-direction: column;
+
+    .mainImg {
+      position: relative;
+      width: 700px;
+      height: 335px;
+      overflow: hidden;
+      border-radius: 20px;
+      box-shadow: 1px 1px 5px #42594A;
+
+      input {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 75px;
+        overflow: hidden;
+      }
+    }
+
+    .dogInfo {
+      margin-top: 20px;
+      width: 100%;
+      // height: 300px;
+      border-radius: 20px;
+      background-color: #F2EFE9;
+      box-shadow: 1px 1px 5px #42594A;
+      padding: 20px;
+
+      .box {
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
+      .info {
+        letter-spacing: 2px;
+        width: 49%;
+        height: 50px;
+        border-radius: 20px;
+        background: #fff;
+        font-size: 18px;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        box-shadow: inset 0px 0px 3px #42594A;
+        text-shadow: 1px 1px 1px #42594a3b;
+        overflow: hidden;
+
+        &:nth-of-type(4),
+        &.gender {
+          input {
+            width: auto;
+            box-shadow: none;
+          }
+        }
+
+        &.name,
+        &.point {
+          span {
+            width: 69px;
+          }
+        }
+
+        input {
+          width: 100%;
+          height: 100%;
+          border: none;
+          outline: none;
+          box-shadow: inset 0px 0px 3px #42594A;
+          padding: 10px;
+          font-size: 18px;
+          border-radius: 0 20px 20px 0;
+        }
+
+        span {
+          margin-right: 5px;
+          font-weight: bold;
+          text-shadow: none;
+          padding: 0 10px;
+        }
+        &.email,
+        &.explain {
+          width: 100%;
+        }
+
+        &.email {
+          margin-top: 20px;
+
+          span {
+            width: 180px;
+          }
+        }
+        &.explain {
+          height: 200px;
+          padding: 10px;
+          flex-direction: column;
+          align-items: flex-start;
+          div {
+            font-weight: bold;
+            margin-bottom: 10px;
+          }
+
+          textarea {
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: inset 0px 0px 3px #42594A;
+            outline: none;
+            border: none;
+            padding: 10px 15px;
+            font-size: 16px;
+          }
+        }
+
+      }
+    }// dogInfo
+
+    figure {
+      margin-top: 20px;
+      width: 100%;
+      height: 400px;
+      overflow: hidden;
+      border-radius: 20px;
+      cursor: pointer;
+      box-shadow: 1px 1px 5px #42594A;
+
+      video {
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        object-fit: cover;
+        filter: saturate(1.5)
+      }
+    }
+  }
+}

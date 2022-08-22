@@ -1,38 +1,3 @@
-
-
-// common
-img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.inner {
-  position: relative;
-  width: 100%;
-  height: 100%
-}
-.center {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.btn {
-  width: 180px;
-  height: 50px;
-  background-color: yellow;
-  border: 3px solid #000;
-  border-radius: 30px;
-  font-size: 20px; 
-  cursor: pointer;
-  transition: .2s linear;
-
-  &:hover {
-    background: #fff;
-    color: #333;
-    transform: scale(1.05);
-  }
-}
-
 .email {
   position: relative;
   margin-top: 100px;

@@ -1,0 +1,121 @@
+.boardInfo {
+  margin-top: 30px;
+  width: 100%;
+  padding: 15px 369px;
+}
+.boardInfo .inner {
+  align-items: flex-start;
+  flex-direction: column;
+}
+.boardInfo .inner .mainImg {
+  position: relative;
+  width: 700px;
+  height: 335px;
+  overflow: hidden;
+  border-radius: 20px;
+  box-shadow: 1px 1px 5px #42594A;
+}
+.boardInfo .inner .mainImg input {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75px;
+  overflow: hidden;
+}
+.boardInfo .inner .dogInfo {
+  margin-top: 20px;
+  width: 100%;
+  border-radius: 20px;
+  background-color: #F2EFE9;
+  box-shadow: 1px 1px 5px #42594A;
+  padding: 20px;
+}
+.boardInfo .inner .dogInfo .box {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.boardInfo .inner .dogInfo .info {
+  letter-spacing: 2px;
+  width: 49%;
+  height: 50px;
+  border-radius: 20px;
+  background: #fff;
+  font-size: 18px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  box-shadow: inset 0px 0px 3px #42594A;
+  text-shadow: 1px 1px 1px rgba(66, 89, 74, 0.231372549);
+  overflow: hidden;
+}
+.boardInfo .inner .dogInfo .info:nth-of-type(4) input, .boardInfo .inner .dogInfo .info.gender input {
+  width: auto;
+  box-shadow: none;
+}
+.boardInfo .inner .dogInfo .info.name span, .boardInfo .inner .dogInfo .info.point span {
+  width: 69px;
+}
+.boardInfo .inner .dogInfo .info input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  box-shadow: inset 0px 0px 3px #42594A;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 0 20px 20px 0;
+}
+.boardInfo .inner .dogInfo .info span {
+  margin-right: 5px;
+  font-weight: bold;
+  text-shadow: none;
+  padding: 0 10px;
+}
+.boardInfo .inner .dogInfo .info.email, .boardInfo .inner .dogInfo .info.explain {
+  width: 100%;
+}
+.boardInfo .inner .dogInfo .info.email {
+  margin-top: 20px;
+}
+.boardInfo .inner .dogInfo .info.email span {
+  width: 180px;
+}
+.boardInfo .inner .dogInfo .info.explain {
+  height: 200px;
+  padding: 10px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.boardInfo .inner .dogInfo .info.explain div {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.boardInfo .inner .dogInfo .info.explain textarea {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: inset 0px 0px 3px #42594A;
+  outline: none;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+}
+.boardInfo .inner figure {
+  margin-top: 20px;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 1px 1px 5px #42594A;
+}
+.boardInfo .inner figure video {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  object-fit: cover;
+  filter: saturate(1.5);
+}
+
+/*# sourceMappingURL=findnewForm.css.map */

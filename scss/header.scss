@@ -5,10 +5,37 @@ header {
   position: relative;
   width: 100%;
   height: 80px;
-  padding: 15px 150px;
+  padding: 35px 150px 15px;
   z-index: 99;
   background-color: rgb(242, 239, 233);
   background: linear-gradient(180deg, rgba(242, 239, 233, .9) 30%, rgba(255,255,255,0) 100%);
+
+  .loginBox {
+    position: absolute;
+    top: 0;
+    right: 0;
+    justify-content: flex-end;
+
+    .signIn,
+    .signUp {
+      width: 100px;
+      height: 30px;
+      padding: 10px;
+      background-color: #AEF2D9;
+      box-shadow: inset 0px 0px 5px #42594A;
+      border-radius: 0 0 20px 20px;
+      cursor: pointer;
+      transition: .2s linear;
+
+      &:hover {
+        background: #fff;
+        transform: scale(1.05);
+      }
+    }
+    .signIn {
+      margin-right: 5px;
+    }
+  }
 
   .inner {
     display: flex;

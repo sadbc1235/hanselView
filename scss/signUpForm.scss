@@ -1,0 +1,92 @@
+.signInForm {
+  position: relative;
+  margin-top: 70px;
+  width: 100%;
+  height: 800px;
+  border-radius: 20px;
+  padding: 15px 150px;
+  overflow: hidden;
+
+  figure {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .video_cover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/video_cover_pattern.png");
+    background-color: rgba(0,0,0,.3);
+    box-shadow: inset 0px 0px 20px #000000;
+  }
+
+  .inner {
+    flex-direction: column;
+  }
+  .subject {
+    width: 100%;
+    height: 40px;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+  }
+
+  form {
+    margin-top: 40px;
+    width: 100%;
+    flex-direction: column;
+
+    div {
+      width: 307px;
+      height: 50px;
+      border-radius: 20px;
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+      background: #fff;
+      overflow: hidden;
+      box-shadow: 1px 1px 5px #27352c;
+
+      h3 {
+        width: calc(307px - 230px);
+        height: 100%;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #F2EFE9;
+        text-align: center;
+      }
+      input {
+        height: 100%;
+        width: 230px;
+        padding-left: 10px;
+        outline: none;
+        border: none;
+        border-radius: 0px 20px 20px 0; 
+        font-size: 18px;
+        background: #fff;
+        box-shadow: inset 0px -1px 3px #42594A;
+      }
+    }
+    .submit {
+      > input {
+        width: 100%;
+        font-weight: bold;
+        cursor: pointer;
+      }
+    }
+  }
+}

@@ -1,0 +1,106 @@
+.boardInfo {
+  margin-top: 30px;
+  width: 100%;
+  height: 646px;
+  padding: 15px 150px;
+}
+.boardInfo > .inner {
+  border-radius: 20px;
+  background-color: #F2EFE9;
+  box-shadow: 2px 2px 7px #42594A;
+  overflow: hidden;
+  justify-content: flex-start;
+}
+.boardInfo > .inner .boardImg {
+  position: relative;
+  width: 35%;
+  height: 100%;
+  box-shadow: 2px 0px 5px #42594A;
+}
+.boardInfo > .inner .boardImg img {
+  filter: saturate(1.5);
+}
+.boardInfo > .inner .boardImg #petImg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75px;
+  overflow: hidden;
+}
+.boardInfo > .inner .boardText {
+  width: 65%;
+  height: 100%;
+  padding: 20px 20px 20px 50px;
+}
+.boardInfo > .inner .boardText .inner .subject {
+  width: 100%;
+  height: 40px;
+  font-size: 35px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.boardInfo > .inner .boardText .inner .info {
+  letter-spacing: 2px;
+  width: 100%;
+  height: 50px;
+  font-size: 18px;
+  border-radius: 20px;
+  background: #fff;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  box-shadow: inset 0px 0px 3px #42594A;
+  text-shadow: 1px 1px 1px rgba(66, 89, 74, 0.231372549);
+  overflow: hidden;
+}
+.boardInfo > .inner .boardText .inner .info:nth-of-type(4) input {
+  width: auto;
+  box-shadow: none;
+}
+.boardInfo > .inner .boardText .inner .info:nth-of-type(4) label {
+  margin-right: 10px;
+}
+.boardInfo > .inner .boardText .inner .info span {
+  display: inline-block;
+  width: 150px;
+  margin-right: 5px;
+  font-weight: bold;
+  text-shadow: none;
+  padding-left: 10px;
+}
+.boardInfo > .inner .boardText .inner .info input {
+  height: 100%;
+  width: calc(100% - 150px);
+  padding: 10px;
+  border: none;
+  outline: none;
+  box-shadow: inset 0px 0px 3px #42594A;
+  border-radius: 0 20px 20px 0;
+  font-size: 18px;
+}
+.boardInfo > .inner .boardText .inner .explain {
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 150px;
+  padding: 10px;
+}
+.boardInfo > .inner .boardText .inner .explain div {
+  font-weight: bold;
+  margin-bottom: 10px;
+  line-height: 25px;
+}
+.boardInfo > .inner .boardText .inner .explain textarea {
+  font-size: 15px;
+  width: 100%;
+  outline: none;
+  padding: 10px 15px;
+  border: none;
+  box-shadow: inset 0px 0px 3px #42594A;
+  border-radius: 20px;
+}
+
+/*# sourceMappingURL=dogfindForm.css.map */
